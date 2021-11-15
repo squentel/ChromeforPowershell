@@ -6,3 +6,4 @@ $ftpuri = "ftp://simon:QuenteL789!@172.17.0.34/myapps2.txt"
 $webclient = New-Object System.Net.WebClient
 $uri = New-Object System.Uri($ftpuri)
 $webclient.UploadFile($uri, $file)  
+Remove-Item -Path C:\myapps.txt -Force
